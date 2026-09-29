@@ -23,7 +23,7 @@ def main():
 
         key_lst = pg.key.get_pressed()
 
-        x = -1
+        x = -1 #代入
         y = 0
 
         if key_lst[pg.K_UP]:
@@ -35,7 +35,7 @@ def main():
         if key_lst[pg.K_RIGHT]:
             x = 1
         
-        kk_rct.move_ip(x,y)
+        kk_rct.move_ip(x,y) # 練習１
 
         x = tmr % 3200 #練習9
         screen.blit(bg_img, [-x, 0])
